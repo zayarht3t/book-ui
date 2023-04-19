@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import './Detail.css'
 import Navbar from '../components/navbar/Navbar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowDown} from '@fortawesome/free-solid-svg-icons'
 import Footer from '../components/navbar/footer/Footer'
 import Card from '../components/navbar/card/Card'
 import { useLocation } from 'react-router-dom'
@@ -63,7 +62,6 @@ const Detail = () => {
                         </div>
                     </div>
                     <button onClick={()=>updateDownload()} className="download px-3 py-1 mt-2 bg-blue-400 text-white gap-1 rounded hover:bg-blue-500">
-                        <FontAwesomeIcon icon={faArrowDown}/>
                         Download
                     </button>
                     <div className="hr w-11/12 h-0.5 bg-slate-300 m-4 mx-auto"></div>
